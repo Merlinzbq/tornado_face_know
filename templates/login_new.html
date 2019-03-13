@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>登录</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- CSS -->
+        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans:400,700'>
+        <link rel="stylesheet" href="/static/assets/css/reset.css">
+        <link rel="stylesheet" href="/static/assets/css/supersized.css">
+        <link rel="stylesheet" href="/static/assets/css/style.css">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+        <div class="page-container" style="width:30%; float:left;">
+            <input type="button" title="开启摄像头" value="开启摄像头" onclick="getMedia();" />
+            <video height="220px" autoplay="autoplay"></video>
+        </div>
+        <div class="page-container" style="width:30%; float:left;">
+            <input type="button" title="拍照" value="拍照" onclick="getPhoto();" />
+            <canvas id="canvas1" height="220px" ></canvas>
+        </div>
+        <div class="page-container" style="float:left; width:30%;">
+            <h1>登录</h1>
+            <form action="" method="post">
+                <input type="hidden" id="face" name="face">
+                <button type="submit">立即登录</button>
+                <div class="error"><span>+</span></div>
+            </form>
+        </div>
+
+        <!-- Javascript -->
+        <script src="/static/assets/js/jquery-1.8.2.min.js"></script>
+        <script src="/static/assets/js/supersized.3.2.7.min.js"></script>
+        <script src="/static/assets/js/supersized-init.js"></script>
+        <script src="/static/assets/js/scripts.js"></script>
+        <!--进入ai.js-->
+        <script rel="stylesheet" src="{{ static_url('js/ai.js') }}"></script>
+    </body>
+
+</html>
+

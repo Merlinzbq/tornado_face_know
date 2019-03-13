@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<head>
+    <title>HTML5 GetUserMedia Demo</title>
+	 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+</head>
+<body>
+    <input type="button" title="开启摄像头" value="开启摄像头" onclick="getMedia();" /><br />
+    <video height="120px" autoplay="autoplay"></video><hr />
+    <input type="button" title="拍照" value="拍照" onclick="getPhoto();" /><br />
+    <canvas id="canvas1" height="120px" ></canvas><hr />
+
+    <script rel="stylesheet" src="{{ static_url('js/ai.js') }}"></script>
+</body>
+

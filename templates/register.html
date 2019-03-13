@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+</head>
+<body>
+    <h1>注册账号</h1>
+    <input type="button" title="开启摄像头" value="开启摄像头" onclick="getMedia();" /><br />
+    <video height="120px" autoplay="autoplay"></video><hr />
+    <input type="button" title="拍照" value="拍照" onclick="getPhoto();" /><br />
+    <canvas id="canvas1" height="120px" ></canvas><hr />
+
+    <form action="" method="post">
+        <input type="hidden" id="face" name="face">
+        <p>用户名:<input type="text" name="username"></p>
+        <p>真实姓名:<input type="text" name="realname"></p>
+        <p><input type="submit" name="提交"></p>
+    </form>
+
+    <script rel="stylesheet" src="{{ static_url('js/ai.js') }}"></script>
+</body>
+</html>
